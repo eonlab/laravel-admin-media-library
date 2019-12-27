@@ -23,6 +23,20 @@ class MediaLibraryMultipleFile extends MultipleFile
         }
     }
 
+    protected function sortFiles($order)
+    {
+        $new = explode(',',$order);
+        $n = 1;
+        foreach($new AS $id){
+            $media = Media::where('id', $id)->first();
+            $media->order_column = $n;
+            $media->save();
+            $n++;
+        }
+
+        return $new;
+    }
+    
     public function setOriginal($data)
     {
         $value = $this->form->model()->getMedia($this->column());
@@ -41,7 +55,8 @@ class MediaLibraryMultipleFile extends MultipleFile
 
     protected function initialPreviewConfig()
     {
-        $medias = Media::whereIn('id', $this->value ?: [])->get();
+
+        $medias = Media::whereIn('id', $this->value ?: [])->orderBy('order_column', 'ASC')->groupBy('id')->get();
 
         $config = [];
         foreach ($medias as $media) {
