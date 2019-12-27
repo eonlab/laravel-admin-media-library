@@ -2,8 +2,8 @@
 
 namespace Eonlab\LaravelAdmin\MediaLibrary;
 
-use App\Admin\Services\MediaLibrary\MediaLibraryFile;
-use App\Admin\Services\MediaLibrary\MediaLibraryMultipleFile;
+use Eonlab\LaravelAdmin\MediaLibrary\MediaLibraryFile;
+use Eonlab\LaravelAdmin\MediaLibrary\MediaLibraryMultipleFile;
 use Encore\Admin\Extension;
 use Encore\Admin\Form;
 
