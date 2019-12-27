@@ -1,6 +1,6 @@
 <?php
 
-namespace Nicklasos\LaravelAdmin\MediaLibrary\Http\Controllers;
+namespace Eonlab\LaravelAdmin\MediaLibrary\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Spatie\MediaLibrary\Models\Media;
