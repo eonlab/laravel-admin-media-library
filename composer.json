@@ -21,13 +21,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Nicklasos\\LaravelAdmin\\MediaLibrary\\": "src/"
+            "eonlab\\LaravelAdmin\\MediaLibrary\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Nicklasos\\LaravelAdmin\\MediaLibrary\\MediaLibraryServiceProvider"
+                "eonlab\\LaravelAdmin\\MediaLibrary\\MediaLibraryServiceProvider"
             ]
 
         }
