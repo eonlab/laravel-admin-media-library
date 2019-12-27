@@ -1,5 +1,5 @@
 {
-    "name": "nicklasos/laravel-admin-media-library",
+    "name": "eonlab/laravel-admin-media-library",
     "description": "Media-library extension for laravel-admin",
     "type": "library",
     "keywords": ["laravel-admin", "extension", "media-library", "media"],
