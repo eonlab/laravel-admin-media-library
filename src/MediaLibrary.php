@@ -1,6 +1,6 @@
 <?php
 
-namespace Nicklasos\LaravelAdmin\MediaLibrary;
+namespace Eonlab\LaravelAdmin\MediaLibrary;
 
 use App\Admin\Services\MediaLibrary\MediaLibraryFile;
 use App\Admin\Services\MediaLibrary\MediaLibraryMultipleFile;
