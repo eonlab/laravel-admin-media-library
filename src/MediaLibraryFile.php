@@ -1,6 +1,6 @@
 <?php
 
-namespace Nicklasos\LaravelAdmin\MediaLibrary;
+namespace Eonlab\LaravelAdmin\MediaLibrary;
 
 use Encore\Admin\Form\Field\File;
 use Spatie\MediaLibrary\Models\Media;
