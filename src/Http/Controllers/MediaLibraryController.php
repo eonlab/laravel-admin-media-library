@@ -3,7 +3,7 @@
 namespace Eonlab\LaravelAdmin\MediaLibrary\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use Spatie\MediaLibrary\Models\Media;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 class MediaLibraryController extends Controller
 {
