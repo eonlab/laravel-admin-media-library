@@ -3,7 +3,7 @@
 namespace Eonlab\LaravelAdmin\MediaLibrary;
 
 use Encore\Admin\Form\Field\MultipleFile;
-use Spatie\MediaLibrary\Models\Media;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class MediaLibraryMultipleFile extends MultipleFile
