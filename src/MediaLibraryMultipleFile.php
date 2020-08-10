@@ -11,6 +11,13 @@ class MediaLibraryMultipleFile extends MultipleFile
     use MediaLibraryBase;
 
     protected $view = 'admin::form.multiplefile';
+    
+    public function download()
+    {
+        $this->download = true;
+
+        return $this;
+    }
 
     public function fill($data)
     {
