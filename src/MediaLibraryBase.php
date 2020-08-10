@@ -53,6 +53,7 @@ trait MediaLibraryBase
             'caption' => $media->file_name,
             'key' => $media->id,
             'size' => $media->size,
+            'filetype' => $media->mime_type
         ];
 
         if (!empty($type)) {
