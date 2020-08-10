@@ -10,6 +10,8 @@ use URL;
 trait MediaLibraryBase
 {
     private $responsive = false;
+    
+    private $download = false;
 
     public function responsive()
     {
@@ -55,6 +57,10 @@ trait MediaLibraryBase
             'size' => $media->size,
             'filetype' => $media->mime_type
         ];
+        
+        if($this->download){
+            $entry['downloadUrl'] = $media->getFullUrl();
+        }
 
         if (!empty($type)) {
             $entry['type'] = $type;
